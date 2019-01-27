@@ -1,0 +1,14 @@
+fileIn<-"512b_tradpaging_correct_1GA.txt_";
+fileOut<-"Trad512_";
+pathway<-"/home/adrian/results/flash/";
+for (bb in c(0:7)) {
+	readIn<-paste(fileIn, bb, ".txt", sep="");
+	if (!file.exists(paste(pathway, readIn, sep=""))){
+		next
+	}
+	objectIn<-paste(fileOut, bb, sep="");
+	tempObj<-read.csv(paste(pathway, readIn, sep=""));
+	tempObj$bb <- bb
+	assign(objectIn, tempObj);
+}
+

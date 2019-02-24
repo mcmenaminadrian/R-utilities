@@ -1,5 +1,5 @@
 numbers = c(1262292, 376891, 378280, 658567, 8295863, 332299, 13437582, 736058)
-nameTemplate<-"FIFO512_";
+nameTemplate<-"Delay512_";
 for (bb in c(0:7)){
 	if (!exists(paste(nameTemplate, bb, sep=""))){
 		next

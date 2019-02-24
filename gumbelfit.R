@@ -12,6 +12,6 @@ qgumbel <- function(p, mu, s){ #quantile function
 	mu-s*log(-log(p))
 }
 
-gumbel.fit <-fitdist(biggest, "gumbel", start=list(mu=1100000, s=50000), method="mle")
+gumbel.fit <-fitdist(big3D, "gumbel", start=list(mu=2200000,  s=68000), method="mle")
 
 summary(gumbel.fit)

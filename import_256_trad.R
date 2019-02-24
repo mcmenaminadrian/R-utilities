@@ -1,5 +1,5 @@
-fileIn<-"128-pp-flags.txt_";
-fileOut<-"PP128_";
+fileIn<-"256-trad-flags.txt_";
+fileOut<-"TR256_";
 pathway<-"/home/adrian/results/flash/";
 for (bb in c(0:7)) {
 	readIn<-paste(fileIn, bb, ".txt", sep="");

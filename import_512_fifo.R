@@ -1,4 +1,4 @@
-fileIn<-"512_pp_fifo.txt_";
+fileIn<-"512-fifo-pp-flags.txt_";
 fileOut<-"FIFO512_";
 pathway<-"/home/adrian/results/flash/";
 for (bb in c(0:7)) {

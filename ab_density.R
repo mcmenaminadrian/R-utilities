@@ -1,3 +1,3 @@
-test<-ggplot(data=big512Blocks[which(big512Blocks$bb == 3 & big512Blocks$Iteration < 5  ),], aes(x=Count, color=factor(mthod))) + geom_line(stat="density") +
-labs(title="Benchmark 3, with 512 byte pages - first 5 iterations") + scale_color_manual("Method", values=c(1:4)) + 
+test<-ggplot(data=Big512[which(Big512$bb == 0 & Big512$Iteration < 15  ),], aes(x=Count, color=factor(Method))) + geom_line(stat="density") +
+labs(title="Benchmark 0, with 512 byte pages - first 15 iterations") + scale_color_manual("Method", values=c(1:3)) + 
 geom_hline(col="white", yintercept=0)

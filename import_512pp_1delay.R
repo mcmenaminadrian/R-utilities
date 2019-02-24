@@ -1,5 +1,5 @@
-fileIn<-"128-pp-flags.txt_";
-fileOut<-"PP128_";
+fileIn<-"512-pp-1cycledelay.txt_";
+fileOut<-"Delay512_";
 pathway<-"/home/adrian/results/flash/";
 for (bb in c(0:7)) {
 	readIn<-paste(fileIn, bb, ".txt", sep="");

@@ -1,4 +1,4 @@
-fileIn<-"512-trad-flagadjust.txt_";
+fileIn<-"512-trad-f.txt_";
 fileOut<-"Trad512_";
 pathway<-"/home/adrian/results/flash/";
 for (bb in c(0:7)) {

@@ -1,5 +1,5 @@
 numbers = c(1262292, 376891, 378280, 658567, 8295863, 332299, 13437582, 736058)
-nameTemplate<-"TradOneK_";
+nameTemplate<-"TR1024_";
 for (bb in c(0:7)){
 	if (!exists(paste(nameTemplate, bb, sep=""))){
 		next
@@ -7,6 +7,8 @@ for (bb in c(0:7)){
 	cat(sprintf("Benchmark %i\n", bb))
 	initialCount <- eval(parse( text = paste("mean(", nameTemplate, bb, "$Count[", nameTemplate, bb, "$Iteration==0])", sep="")))
         subCount<-eval(parse( text = paste("mean(", nameTemplate, bb, "$Count[", nameTemplate, bb, "$Iteration>0])", sep="")))
+	maxInit <- eval(parse( text = paste("max(", nameTemplate, bb, "$Count[", nameTemplate, bb, "$Iteration==0])", sep="")))
+        maxRest<-eval(parse( text = paste("max(", nameTemplate, bb, "$Count[", nameTemplate, bb, "$Iteration>0])", sep="")))
 	initialBlocks<-eval(parse( text = paste("mean(", nameTemplate, bb, "$Blocks[", nameTemplate, bb, "$Iteration==0])", sep="")))
 	subBlocks<-eval(parse( text = paste("mean(", nameTemplate, bb, "$Blocks[", nameTemplate, bb, "$Iteration>0])", sep="")))
         initialST<-eval(parse( text = paste("mean(", nameTemplate, bb, "$ST[", nameTemplate, bb, "$Iteration==0])", sep="")))
@@ -25,6 +27,8 @@ for (bb in c(0:7)){
 	adminSub <- 1 - (subBS + subSS + effSub)
 	cat(sprintf("Means for initial %s\n", initialCount))
 	cat(sprintf("Means for rest %s\n", subCount))
+	cat(sprintf("Max for initial %s\n", maxInit))
+	cat(sprintf("Max for rest %s\n", maxRest))
 	cat(sprintf("Mean ST for initial %s\n",initialST)) 
 	cat(sprintf("Mean ST for rest %s\n", subST))
 	cat(sprintf("Mean blocks for initial %s\n", initialBlocks))

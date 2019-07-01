@@ -1,6 +1,6 @@
-fileIn<-"dimsilicon7.txt_";
+fileIn<-"dimsilicon-pp-f.txt_";
 fileOut<-"DIMSIL_";
-pathway<-"/home/adrian/results/flash/power/0delay/";
+pathway<-"/home/adrian/results/flash/";
 for (bb in c(0:7)) {
 	readIn<-paste(fileIn, bb, ".txt", sep="");
 	if (!file.exists(paste(pathway, readIn, sep=""))){

@@ -1,4 +1,4 @@
-fileIn<-"256-trad-flags.txt_";
+fileIn<-"256-trad-f.txt_";
 fileOut<-"TR256_";
 pathway<-"/home/adrian/results/flash/";
 for (bb in c(0:7)) {

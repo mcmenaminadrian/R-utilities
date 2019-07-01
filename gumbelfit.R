@@ -12,6 +12,6 @@ qgumbel <- function(p, mu, s){ #quantile function
 	mu-s*log(-log(p))
 }
 
-gumbel.fit <-fitdist(big3D, "gumbel", start=list(mu=2200000,  s=68000), method="mle")
+gumbel.fit <-fitdist(BlockMaxima_7_48, "gumbel", start=list(mu=3690000,  s=69813), method="mle")
 
 summary(gumbel.fit)

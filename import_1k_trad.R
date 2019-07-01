@@ -1,5 +1,5 @@
-fileIn<-"1024-trad-flags.txt_";
-fileOut<-"TradOneK_";
+fileIn<-"1024-trad-f.txt_";
+fileOut<-"TR1024_";
 pathway<-"/home/adrian/results/flash/";
 for (bb in c(0:7)) {
 	readIn<-paste(fileIn, bb, ".txt", sep="");

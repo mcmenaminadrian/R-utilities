@@ -1,4 +1,4 @@
-fileIn<-"256-pp-flags.txt_";
+fileIn<-"256-pp-f.txt_";
 fileOut<-"PP256_";
 pathway<-"/home/adrian/results/flash/";
 for (bb in c(0:7)) {

@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 
-if (FALSE) {
+if (TRUE) {
 PP512$TF <- 0
 PP512$BPF <- 0
 PP512$FPT <- 0

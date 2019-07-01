@@ -1,11 +1,11 @@
-big3D <- vector()
-j <- 64
-k <- nrow(PP512_3)
+fifoMAX_2 <- vector()
+j <- 32
+k <- nrow(FIFO512_2)
 l <- k / j
 for (i in 1:l) {
-	lower <- (i -1) * j + 1
-	upper <- i * j
-	big3D<-c(big3D, max(PP512_3[lower:upper,]$Count))
+	lower <- (i -1) * j
+	upper <- lower + j
+	fifoMAX_2<-c(fifoMAX_2, max(FIFO512_2[lower:upper,]$Count))
 } 
 
 

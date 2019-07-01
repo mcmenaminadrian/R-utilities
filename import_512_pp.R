@@ -1,4 +1,4 @@
-fileIn<-"512-master-flags.txt_";
+fileIn<-"512-pp-f.txt_";
 fileOut<-"PP512_";
 pathway<-"/home/adrian/results/flash/";
 for (bb in c(0:7)) {

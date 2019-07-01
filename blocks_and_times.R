@@ -2,7 +2,7 @@ BlockTimes<-data.frame(name=character(), bb=integer(), maxBlocks=double(), aveBl
 
 btNames<-names(BlockTimes)
 
-for (i in c("PP1024", "TradOne", "PP1D1K"))
+for (i in c("PP1024", "TR1024", "PP1D1024"))
 {
 	for (j in 0:7)
 	{

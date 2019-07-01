@@ -17,7 +17,7 @@ for (i in 1:nrow(PP1D512))
 	}
 }
 }
-if (FALSE) {
+if (TRUE) {
 library("ggplot2")
 faults<-ggplot(PP1D512, aes(y=BPF, x=TF, color=factor(bb), shape=factor(bb))) + geom_point() + 
 scale_x_log10() +

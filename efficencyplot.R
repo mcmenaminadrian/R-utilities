@@ -16,9 +16,9 @@ for (i in 1:nrow(PP1024))
 
 names(EFFpp)<-ColnamesPP
 
-for (i in 1:nrow(TradOne)){
-	EFFtr<-rbind(EFFtr, c(TradOne[i,]$bb, (code[TradOne[i, ]$bb + 1])/TradOne[i, ]$Count, 
-		TradOne[i,]$Blocks/TradOne[i,]$Count, TradOne[i,]$ST/TradOne[i, ]$Count))
+for (i in 1:nrow(TR1024)){
+	EFFtr<-rbind(EFFtr, c(TR1024[i,]$bb, (code[TR1024[i, ]$bb + 1])/TR1024[i, ]$Count, 
+		TR1024[i,]$Blocks/TR1024[i,]$Count, TR1024[i,]$ST/TR1024[i, ]$Count))
 }
 
 names(EFFtr)<-ColnamesTR

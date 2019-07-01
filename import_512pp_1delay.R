@@ -1,4 +1,4 @@
-fileIn<-"512-pp-1cycledelay.txt_";
+fileIn<-"512-pp-f-1delay.txt_";
 fileOut<-"Delay512_";
 pathway<-"/home/adrian/results/flash/";
 for (bb in c(0:7)) {
